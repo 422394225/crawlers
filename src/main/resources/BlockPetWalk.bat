@@ -1,0 +1,1 @@
+java -jar C:\IDEWorkspace\crawlers\target\crawler-v1.0.jar
