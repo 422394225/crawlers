@@ -46,7 +46,7 @@ public class BlockPetsWalkTask {
                 Map<String, Integer> walkMap = petsAllWalk(token, pets);
                 Integer successCount = walkMap.get("successCount");
                 Integer totalCount = walkMap.get("totalCount");
-                if (successCount != null && totalCount != null && successCount == totalCount) {
+                if (successCount != null && totalCount != null && successCount.equals(totalCount)) {
                     logger.info(LOG_PREFIX + "END (全部)游走成功,等待" + ALL_SUCCESS_SLEEP*1.0 / 60000 + "分钟后重新开启");
                     sleep = ALL_SUCCESS_SLEEP;
                 } else {
